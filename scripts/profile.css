@@ -1,0 +1,10 @@
+.profileconfig img {
+    position: absolute;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

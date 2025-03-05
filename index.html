@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scripts/profile.css">
+
+<style>
+    body {
+        background-color: rgb(158, 33, 158);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* chat gpt fez*/
+            justify-content: center;
+            height: 40vh;
+            text-align: center;
+            margin: 0;
+        }
+    
+        .profileconfig {
+            margin-bottom: 50px;
+        }
+
+    .btn {
+        background-color: purple;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 80px; /*chat gpt arrumou*/
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            margin: 10px;
+    }
+
+    #conteudo {
+    background: white; /* Fundo branco para destacar os elementos */
+    padding: 20px; /* Espaçamento interno para não ficar muito colado */ /*chat gpt fez*/
+    border-radius: 10px; /* Bordas arredondadas para um visual moderno */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra leve para dar destaque */
+}
+
+
+</style>
+
+</head>
+<body>
+    <div class="profileconfig">
+        <img src="images/perfil1.png" class="profile1">
+        <h1>zony</p>
+    </div>
+    <div>
+        <div id ="conteudo">
+            <h2>Quer namorar comigo?</h2>
+            <button class ="btn" onclick="SIM()">SIM</button>
+            <button class="btn" onmouseover="desvia(this)">Não</button>
+        </div>
+    <script>
+            function SIM() {
+        alert('Te amo!')
+    }
+
+    function desvia(t) {
+        var btn = t;
+        btn.style.position = 'absolute';
+        btn.style.bottom = generatePosition(10,90);
+        btn.style.left = generatePosition(10,90);
+    }
+
+    function  generatePosition(min,max) {
+
+        return Math.random() * (max - min) + '%';
+    }
+    </script>
+    </div>
+</body>
+</html>
